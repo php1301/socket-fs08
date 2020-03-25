@@ -7,27 +7,26 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="chat">
-    <div class="chat__sidebar">
-        <h3>People</h3>
-        <div id="users"></div>
+<body class="centered-form">
+    <div class="centered-form__form">
+        <form action="./chat.html">
+            <div class="form-field">
+                <h3>Join a chat room</h3>
+            </div>
+            <div class="form-field">
+                <label for="name">Display name</label>
+                <input type="text" name="name" id="name" autofocus>
+            </div>
+            <div class="form-field">
+                <label for="room">Room name</label>
+                <input type="text" name="room" id="room" autofocus>
+            </div>
+            <div class="form-field">
+                <button>Join room</button>
+            </div>
     </div>
-    <div class="chat__main">
-        <!-- <h1>Welcome to the chat app</h1> -->
-        <ol id="messages" class="chat__messages"></ol>
-        <div class="chat__footer">
-            <form id="message-form">
-                <input type="text" name="message">
-                <button type="submit">Send</button>
-                <button id="send-location" type="button">Send location</button>
-            </form>
-        </div>
+    </form>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="/socket.io/socket.io.js"></script>
-<script src="js/index.js"></script>
-
 
 </html>
